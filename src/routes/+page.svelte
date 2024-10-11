@@ -3,7 +3,7 @@
   // FreeSecond,  Features,
 	import { Header, Footer, Hero, About, AboutAuthor, Goals, TargetAudience, Faq, Price, OtherBoardgames, Benefits,  ProblemsIslandsList, } from '$lib/widgets';
   import { Popup, OtherBoardgameCard } from '$lib/entities'
-  import { OtherboardgameContent } from '$lib/shared';
+  import { OtherboardgameContent, LegalLinks } from '$lib/shared';
 
   const otherBoardgames = [
     {
@@ -39,7 +39,11 @@
 
 <!-- <Popup /> -->
 
-<Header {navigation}/>
+<Header {navigation}>
+  <div slot='legal'>
+    <LegalLinks />
+  </div>
+</Header>
 
 <Hero />
 
@@ -101,7 +105,11 @@
 
 <Faq />
 
-<Footer {navigation} {otherBoardgames}/>
+<Footer {navigation} {otherBoardgames}>
+  <div slot='legal'>
+    <LegalLinks />
+  </div>
+</Footer>
 
 
 <style>

@@ -4,16 +4,14 @@
 
 <section class="section">
   <div class="w-layout-blockcontainer container w-container">
-    <div data-w-id="5e9541ff-22ba-5272-a979-a6b2301e7951" style="" class="comp_footer">
+    <div style="" class="comp_footer">
       <div class="footer_wrapper">
         <div class="newsletter">
           <div class="footer_logo">
-            <a href="#" class="nav_logo w-nav-brand">
+            <a href="/" class="nav_logo w-nav-brand">
               <img src="/images/logo.svg" class='h-20 w-64' alt="">
-              <!-- <div class="logo">Health <span class="textstyle_spaciousblackit">puzzle</span>
-              </div> -->
             </a>
-            <!-- <div class="text_size_s">Mindful Leadership</div> -->
+            <div class="text_size_s">Zbadaj zdrowie - i ułóż puzzle.</div>
           </div>
         </div>
         <div class="footer_links">
@@ -77,12 +75,10 @@
           </div>
         </div>
       </div>
-      <div class="footer_legal">
-        <div class="text_size_s">
-          <p>© 2024-2025 <a href="https://44games.vercel.app/" target="_blank">44games</a>. All rights reserved.  </p>
-          <p>Development by <a href="/" target="_blank">darkdev</a></p>
-        </div>
-      </div>
+
+      <slot name='legal'>
+
+      </slot>
 
       <div class="footer_bg w-embed">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1613 1005" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
