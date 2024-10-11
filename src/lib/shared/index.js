@@ -11,8 +11,8 @@ import islands from './data/islands';
 import IslandList from './ui/IslandList.svelte';
 import IslandDesc from './ui/IslandDesc.svelte';
 import OtherboardgameContent from './ui/OtherboardgameContent.svelte';
-// import IslandList from './ui/IslandList.svelte';
+import LegalLinks from './ui/LegalLinks.svelte';
 // import IslandList from './ui/IslandList.svelte';
 // import IslandList from './ui/IslandList.svelte';
 
-export { navigation, faq, IslandList, islands, IslandDesc, OtherboardgameContent,  };
+export { navigation, faq, IslandList, islands, IslandDesc, OtherboardgameContent, LegalLinks };
