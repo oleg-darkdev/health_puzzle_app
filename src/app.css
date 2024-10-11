@@ -5544,21 +5544,7 @@ strong {
   margin-left: 0;
   margin-right: 0;
 }
-.faq_single_question {
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  text-align: left;
-  cursor: pointer;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1em;
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
-  font-weight: 600;
-  display: flex;
-}
+
 .faq_single_question.programme {
   grid-column-gap: 0.5em;
   grid-row-gap: 0.5em;
@@ -5567,21 +5553,7 @@ strong {
   padding-left: 0;
   padding-right: 0;
 }
-.faq_single {
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 1em;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  height: 100%;
-  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
-  transform: translate(0);
-}
-.faq_single:hover {
-  background-color: var(--white);
-  transform: translateY(-0.25em);
-  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-}
+
 .faq_single.programme {
   z-index: 2;
   border-style: none;
@@ -5645,33 +5617,7 @@ strong {
   padding-left: 5%;
   padding-right: 5%;
 }
-.faq_single-icon {
-  background-color: rgba(218, 223, 234, 0.4);
-  border-radius: 0.5em;
-  align-self: flex-start;
-  width: 1.5em;
-  height: 1.5em;
-  transition: opacity 0.2s;
-}
-.faq_single-icon:hover {
-  opacity: 0.6;
-}
-.faq_single-icon:active {
-  opacity: 0.4;
-}
-.faq_single_answer {
-  grid-column-gap: 0.5em;
-  grid-row-gap: 0.5em;
-  opacity: 0.8;
-  flex-flow: column;
-  margin-bottom: 1em;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-size: 0.875em;
-  line-height: 130%;
-  display: flex;
-  overflow: hidden;
-}
+
 .faq_single_answer.programme {
   margin-bottom: 0;
   padding-left: 0;
@@ -5826,7 +5772,7 @@ strong {
   text-align: left;
 }
 .course_text li {
-  background-image: url(../images/667a9b32beda20cc21f4d50d_Hero-Icon-Plant.svg);
+  background-image: url(/images/green_plant.svg);
   background-position: 0 6px;
   background-repeat: no-repeat;
   background-size: 0.75em;
@@ -5918,7 +5864,7 @@ strong {
   text-align: left;
 }
 .programme_richtext li {
-  background-image: url(../images/667a9b32beda20cc21f4d50d_Hero-Icon-Plant.svg);
+  background-image: url(/images/green_plant.svg);
   background-position: 0 6px;
   background-repeat: no-repeat;
   background-size: 0.75em;
@@ -7321,19 +7267,9 @@ strong {
     margin-left: 0;
     margin-right: 0;
   }
-  .faq_single_question {
-    margin-bottom: 0.5em;
-  }
-  .faq_single {
-    border-width: 1px;
-    border-color: var(--gray-20);
-    background-color: var(--white);
-    transform: none;
-  }
-  .faq_single:hover {
-    box-shadow: none;
-    transform: none;
-  }
+
+
+
   .faq_single.programme {
     background-color: rgba(255, 255, 255, 0);
   }
@@ -7345,9 +7281,7 @@ strong {
   .faq_list.usp {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  .faq_single_answer {
-    margin-bottom: 1.5em;
-  }
+
   .margin-top {
     margin-bottom: 0;
     margin-left: 0;
@@ -7692,33 +7626,58 @@ strong {
     bottom: -5%;
   }
 }
-#w-node-_4de05701-d6ed-72b5-8123-f9bf50e71961-8ff5beca,
-#w-node-_1be49782-bb9b-a55c-c799-773ffd6076f1-8ff5beca,
-#w-node-_00076f4a-8278-1a8e-79d0-091ede9a732a-8ff5beca,
-#w-node-_8277e20e-6841-26df-6a3d-c2db24320299-8ff5beca,
-#w-node-_9bdfee99-1816-dca4-995e-40a3ac0b2b1a-8ff5beca,
-#w-node-_40ffdfe5-1db8-a87c-2ce2-bc80e84e4569-8ff5beca {
-  grid-area: span 1 / span 2 / span 1 / span 2;
-}
-#w-node-_051ea839-13f8-00db-e152-89c96320ba5e-8ff5beca,
-#w-node-_13c88c97-1a7a-4b56-cbff-25fff68acb00-8ff5beca {
+
+.big-right-otherBoardgame-card {
   grid-area: span 1 / span 3 / span 1 / span 3;
 }
+.big-left-otherBoardgame-card {
+  grid-area: span 1 / span 3 / span 1 / span 3;
+}
+
+.small-otherBoardgame-card  {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+@media screen and (max-width: 991px) {
+  .big-right-otherBoardgame-card {
+    grid-column: span 4 / span 4;
+  }
+  .big-left-otherBoardgame-card  {
+    grid-column: span 2 / span 2;
+  }
+
+  .big-faq-card {
+    grid-column: span 2 / span 2;
+  }
+}
+@media screen and (max-width: 767px) {
+  .big-right-otherBoardgame-card {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.small-faq-card {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+
+.big-faq-card  {
+  grid-area: span 1 / span 3 / span 1 / span 3;
+}
+
+
+
+/*  */
+
+
 #w-node-_4df4993d-3093-186c-d9aa-08cb996cb678-8ff5beca {
   grid-area: 2/2/3/3;
 }
 
 
 
-#w-node-ff0b76eb-6e03-b86e-1b18-d473ffea4dc8-8ff5beca,
-#w-node-ff0b76eb-6e03-b86e-1b18-d473ffea4dd5-8ff5beca,
-#w-node-ff0b76eb-6e03-b86e-1b18-d473ffea4de0-8ff5beca {
-  grid-area: span 1 / span 2 / span 1 / span 2;
-}
-#w-node-ff0b76eb-6e03-b86e-1b18-d473ffea4ded-8ff5beca,
-#w-node-ff0b76eb-6e03-b86e-1b18-d473ffea4dfb-8ff5beca {
-  grid-area: span 1 / span 3 / span 1 / span 3;
-}
+
+
 #w-node-_09553088-d3c9-8585-af29-f83994fbb06f-8ff5beca,
 #w-node-_09553088-d3c9-8585-af29-f83994fbb07c-8ff5beca,
 #w-node-_09553088-d3c9-8585-af29-f83994fbb089-8ff5beca,
@@ -7731,10 +7690,7 @@ strong {
   #w-node-e6d2dbac-7afe-a06c-6634-ec67e961f1b6-8ff5beca {
     grid-area: 2/1/3/2;
   }
-  #w-node-_051ea839-13f8-00db-e152-89c96320ba5e-8ff5beca,
-  #w-node-_13c88c97-1a7a-4b56-cbff-25fff68acb00-8ff5beca {
-    grid-column: span 2 / span 2;
-  }
+
   #w-node-e5f6691e-10ac-9676-4e9e-e81dfd569923-8ff5beca {
     grid-area: 2/1/3/2;
   }
@@ -7744,9 +7700,7 @@ strong {
   #w-node-c0f31346-fde4-279f-edff-639aec5f29fe-8ff5beca {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
-  #w-node-ff0b76eb-6e03-b86e-1b18-d473ffea4ded-8ff5beca {
-    grid-column: span 2 / span 2;
-  }
+
   #w-node-ff0b76eb-6e03-b86e-1b18-d473ffea4dfb-8ff5beca {
     grid-column: span 4 / span 4;
   }
