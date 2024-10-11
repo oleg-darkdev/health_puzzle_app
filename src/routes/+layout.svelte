@@ -8,9 +8,9 @@
 	});
 </script>
 
-<main class="bg-black overflow-hidden">
+<div class="overflow-hidden page-wrapper">
 	<slot />
-</main>
+</div>
 
 <style>
 </style>
