@@ -56,19 +56,32 @@
 
           <div class="footer_links-col">
             <div class="footer_links-colname">
-              Get in touch
+              <!-- Get in touch -->
+              kontakt
+            </div>
+            <div class="">
+              <a href="https://44games.vercel.app/" class='-mb-8' target="_blank">
+                <img src="/images/logos/44games.svg" class='h-12  w-auto' alt="44Games logo">
+              </a>
+
             </div>
             <div class="footer_links-list">
               <a href="#" class="button w-button">Instagram</a>
               <a href="#" class="button w-button">Facebook</a>
               <a href="#" class="button w-button">Linkedin</a>
             </div>
+
+
+
+
           </div>
         </div>
       </div>
       <div class="footer_legal">
-        <!-- © 2024 44games. All rights reserved. -->
-        <div class="text_size_s">development by <a href="/" target="_blank">darkdev</a> </div>
+        <div class="text_size_s">
+          <p>© 2024-2025 <a href="https://44games.vercel.app/" target="_blank">44games</a>. All rights reserved.  </p>
+          <p>Development by <a href="/" target="_blank">darkdev</a></p>
+        </div>
       </div>
 
       <div class="footer_bg w-embed">
