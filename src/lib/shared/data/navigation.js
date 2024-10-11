@@ -16,6 +16,11 @@ let links = [
       link: '#author'
     },
     {
+      title: 'Puzzle management',
+      link: '#puzzle-management'
+    },
+
+    {
       title: 'F.A.Q.',
       link: '#faq'
     },

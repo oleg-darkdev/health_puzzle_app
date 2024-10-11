@@ -1,5 +1,5 @@
 <script>
- 
+
 </script>
 
 <section class="section">
@@ -15,7 +15,7 @@
       <div  class="work_grid">
         <slot />
       </div>
-      <div id="other-boardgames" class="anchor"></div>
+      <div id="puzzle-management" class="anchor"></div>
     </div>
   </div>
 </section>
